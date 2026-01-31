@@ -1,5 +1,7 @@
 # lazydukk/dots
 
+### Uses [Dotter](https://github.com/SuperCuber/dotter)
+
 # Commands
 using windows symlinks `mklink`
 
@@ -8,13 +10,13 @@ this creates dir junction
 
 ---
 # Configs
-- [GlazeWM & Zebar](./windows/.glzr) 
+- GlazeWM & Zebar
 ![zebar](./assets/zebar.png)
-- [nvim](./windows/AppData/Local/nvim/)
+- NeoVim
 ![nvim](./assets/nvim.png)
     - NvChad
     - Configured for C++
     - [help](./windows/AppData/Local/nvim/help.md)
 
-- [pwsh](./windows/Documents/PowerShell)    
-    - [oh-my=posh](./windows/omp-themes/)
+- PowerShell V7    
+  - omp-themes
