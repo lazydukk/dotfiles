@@ -10,12 +10,11 @@ this creates dir junction
 # Configs
 - [GlazeWM & Zebar](./windows/.glzr) 
 ![zebar](./assets/zebar.png)
-![desktop](./assets/desktop-1.png)
 - [nvim](./windows/AppData/Local/nvim/)
 ![nvim](./assets/nvim.png)
-    - using NvChad
-    - configured for c++
+    - NvChad
+    - Configured for C++
     - [help](./windows/AppData/Local/nvim/help.md)
 
 - [pwsh](./windows/Documents/PowerShell)    
-    - [omp | oh-my=posh](./windows/omp-themes/)
+    - [oh-my=posh](./windows/omp-themes/)
