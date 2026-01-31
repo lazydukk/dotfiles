@@ -1,0 +1,85 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "languages": {
+    "C++": {
+      "colorize_brackets": false,
+      "inlay_hints": {
+        "show_value_hints": true,
+        "show_background": false,
+        "enabled": false,
+      },
+      "show_whitespaces": "all",
+      "use_on_type_format": true,
+      "format_on_save": "on",
+    },
+  },
+  "diagnostics": {
+    "include_warnings": true,
+  },
+  "debugger": {
+    "dock": "right",
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "prettier": {
+    "allowed": true,
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
+  "buffer_font_family": "ZedMono Nerd Font",
+  "icon_theme": "Material Icon Theme",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "One Dark Pro Monokai Darker",
+  },
+  "terminal": {
+    "detect_venv": {
+      "on": {
+        // Default directories to search for virtual environments, relative
+        // to the current working directory. We recommend overriding this
+        // in your project's settings, rather than globally.
+        "directories": [".env", "env", ".venv", "venv"],
+        // Can also be `csh`, `fish`, and `nushell`
+        "activate_script": "default",
+      },
+    },
+    "shell": {
+      "with_arguments": {
+        "program": "cmd.exe",
+        "args": [
+          "/c",
+          "C:\\msys64\\msys2_shell.cmd",
+          "-defterm",
+          "-here",
+          "-no-start",
+          "-ucrt64",
+        ],
+      },
+    },
+  },
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "path": "C:\\msys64\\ucrt64\\bin\\clangd.exe",
+      },
+    },
+  },
+}

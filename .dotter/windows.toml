@@ -1,0 +1,12 @@
+[nvim.files]
+"nvim" = "~/AppData/Local/nvim"
+
+[zed.files]
+"zed" = "~/AppData/Roaming/Zed"
+
+[powershell.files]
+"powershell/Microsoft.PowerShell_profile.ps1" = "~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1"
+"powershell/powershell.config.json" = "~/Documents/PowerShell/powershell.config.json"
+
+[OMP.files]
+"omp-themes" = { target = "~/omp-themes", type = "symbolic"}

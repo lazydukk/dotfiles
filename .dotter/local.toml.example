@@ -1,0 +1,6 @@
+includes = [".dotter/windows.toml"]
+packages = ["nvim", "zed", "powershell"]
+
+[files]
+
+[variables]
