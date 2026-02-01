@@ -1,5 +1,5 @@
 includes = [".dotter/windows.toml"]
-packages = ["nvim", "zed", "powershell"]
+packages = ["nvim", "zed", "powershell", "OMP", "winterm"]
 
 [files]
 
