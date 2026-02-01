@@ -8,5 +8,8 @@
 "powershell/Microsoft.PowerShell_profile.ps1" = "~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1"
 "powershell/powershell.config.json" = "~/Documents/PowerShell/powershell.config.json"
 
+[winterm.files]
+"winterm" = { target = "~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/", type = "symbolic" }
+
 [OMP.files]
-"omp-themes" = { target = "~/omp-themes", type = "symbolic"}
+"omp-themes" = { target = "~/omp-themes", type = "symbolic" }
