@@ -37,7 +37,8 @@
             "colorScheme": "Catppuccin Mocha",
             "font": 
             {
-                "face": "ZedMono Nerd Font Mono"
+                "face": "Fira Code",
+                "size": 10
             },
             "opacity": 50,
             "useAcrylic": true
