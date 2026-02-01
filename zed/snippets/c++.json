@@ -5,18 +5,16 @@
       "#include <iostream>",
       "using namespace std;",
       "",
-      "int main() {",
-      "   $0 ",
-      "    ",
-      "    ",
+      "int main()",
+      "{",
       "    return 0;",
-      "}",
+      "}"
     ],
-    "description": "C++ main function template with iostream",
+    "description": "C++ main function template with iostream"
   },
   "Another snippet": {
     "prefix": "as",
     "body": ["// Additional snippet here"],
-    "description": "Example snippet",
-  },
+    "description": "Example snippet"
+  }
 }
