@@ -37,8 +37,9 @@
             "colorScheme": "Catppuccin Mocha",
             "font": 
             {
-                "face": "Fira Code",
-                "size": 10
+                "face": "Fira Code Retina",
+                "size": 12,
+                "weight": "medium"
             },
             "opacity": 50,
             "useAcrylic": true

@@ -4,6 +4,9 @@
 [zed.files]
 "zed" = "~/AppData/Roaming/Zed"
 
+[flameshot-win.files]
+"flameshot-win/flameshot.ini" = "~/AppData/Roaming/flameshot/flameshot.ini"
+
 [powershell.files]
 "powershell/Microsoft.PowerShell_profile.ps1" = "~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1"
 "powershell/powershell.config.json" = "~/Documents/PowerShell/powershell.config.json"
