@@ -33,11 +33,11 @@
     "dock": "left",
   },
   "prettier": {
-    "allowed": true,
+    "allowed": false,
   },
   "autosave": {
     "after_delay": {
-      "milliseconds": 1000,
+      "milliseconds": 500,
     },
   },
   "buffer_font_family": "ZedMono Nerd Font",

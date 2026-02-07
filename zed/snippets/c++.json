@@ -11,9 +11,23 @@
     ],
     "description": "C++ main function template with iostream"
   },
+  "C++ competitve programming template": {
+    "prefix": "comp",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "int main() {",
+      "  return 0;",
+      "}"
+    ],
+    "description": "C++ main function template with iostream"
+  },
   "Another snippet": {
     "prefix": "as",
-    "body": ["// Additional snippet here"],
+    "body": [
+      "// Additional snippet here"
+    ],
     "description": "Example snippet"
   }
 }
