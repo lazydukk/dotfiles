@@ -21,7 +21,23 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-r": ["task::Spawn", { "task_name": "comp.run" }]
+      "ctrl-r": [
+        "task::Spawn",
+        {
+          "task_name": "comp.run"
+        }
+      ]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-z": [
+        "task::Spawn",
+        {
+          "task_name": "competitive.run"
+        }
+      ]
     }
   },
   {
