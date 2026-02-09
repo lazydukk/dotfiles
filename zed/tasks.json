@@ -63,6 +63,15 @@
     "shell": "system",
   },
   {
+    "label": "comp.multiple.run",
+    "command": "cd $ZED_DIRNAME && g++ -O2 -DNDEBUG -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror -std=c++23 *.cpp -o ./$ZED_STEM.exe && ./$ZED_STEM.exe",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never",
+    "shell": "system",
+  },
+  {
     "label": "competitive.run",
     "command": "cd $ZED_DIRNAME && g++ -std=c++11 -O2 -Wall -o ./builds_compet/$ZED_STEM.exe ./$ZED_STEM.cpp && ./builds_compet/$ZED_STEM.exe",
     "use_new_terminal": false,
