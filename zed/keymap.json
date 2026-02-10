@@ -32,6 +32,17 @@
   {
     "context": "Workspace",
     "bindings": {
+      "ctrl-m": [
+        "task::Spawn",
+        {
+          "task_name": "comp.multiple.run"
+        }
+      ]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
       "alt-z": [
         "task::Spawn",
         {
