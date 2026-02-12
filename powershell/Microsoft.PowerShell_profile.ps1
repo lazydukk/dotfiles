@@ -15,7 +15,7 @@ function gco
 
 # Commits and Staging
 function ga
-{ git add --all $args
+{ git add --all
 }
 function gc
 { git commit -m $args
