@@ -1,6 +1,42 @@
 # hello, testing testing
 oh-my-posh init pwsh --config 'C:\Users\bdas\omp-themes\gruvbox.omp.json' | Invoke-Expression
 
+# custom git functions
+# Status and Branching
+function gs
+{ git status $args
+}
+function gb
+{ git branch $args
+}
+function gco
+{ git checkout $args
+}
+
+# Commits and Staging
+function ga
+{ git add --all $args
+}
+function gc
+{ git commit -m $args
+}
+function gca
+{ git add --all; git commit -m $args
+}
+
+# Remote Operations
+function gp
+{ git push $args
+}
+function gl
+{ git pull $args
+}
+
+# Logging
+function glog
+{ git log --oneline --graph --decorate $args
+}
+
 #custom commands
 function sync ()
 {
