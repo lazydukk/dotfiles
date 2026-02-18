@@ -60,6 +60,8 @@
   },
 
   "terminal": {
+    "working_directory": "current_file_directory",
+    "dock": "left",
     "detect_venv": {
       "on": {
         // Default directories to search for virtual environments, relative

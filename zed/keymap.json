@@ -67,5 +67,29 @@
     "bindings": {
       "shift-f1": "command_palette::Toggle"
     }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-`": "terminal_panel::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-j": "terminal_panel::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-`": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-j": "workspace::ToggleBottomDock"
+    }
   }
 ]
