@@ -21,7 +21,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "f1": [
+      "alt-f1": [
         "task::Spawn",
         {
           "task_name": "comp.run"
@@ -32,7 +32,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "f2": [
+      "alt-f2": [
         "task::Spawn",
         {
           "task_name": "comp.multiple.run"
@@ -43,7 +43,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "f3": [
+      "alt-f3": [
         "task::Spawn",
         {
           "task_name": "competitive.run"
@@ -54,12 +54,18 @@
   {
     "context": "Workspace",
     "bindings": {
-      "f4": [
+      "alt-f4": [
         "task::Spawn",
         {
           "task_name": "debug.run"
         }
       ]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "shift-f1": "command_palette::Toggle"
     }
   }
 ]

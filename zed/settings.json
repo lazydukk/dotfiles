@@ -9,10 +9,14 @@
 {
   "git_panel": {
     "dock": "right",
-    "tree_view": false
+    "tree_view": false,
   },
   "languages": {
     "C++": {
+      "prettier": {
+        "allowed": false,
+      },
+      "tab_size": 2,
       "colorize_brackets": false,
       "inlay_hints": {
         "show_value_hints": true,
@@ -34,7 +38,7 @@
     "dock": "right",
   },
   "prettier": {
-    "allowed": false,
+    "allowed": true,
   },
   "autosave": {
     "after_delay": {
@@ -54,18 +58,14 @@
     "light": "One Light",
     "dark": "One Dark Pro Monokai Darker",
   },
+
   "terminal": {
     "detect_venv": {
       "on": {
         // Default directories to search for virtual environments, relative
         // to the current working directory. We recommend overriding this
         // in your project's settings, rather than globally.
-        "directories": [
-          ".env",
-          "env",
-          ".venv",
-          "venv"
-        ],
+        "directories": [".env", "env", ".venv", "venv"],
         // Can also be `csh`, `fish`, and `nushell`
         "activate_script": "default",
       },
@@ -85,12 +85,20 @@
       },
     },
   },
+  */
+  },
+
   "lsp": {
     "clangd": {
       "binary": {
         "path": "C:\\msys64\\ucrt64\\bin\\clangd.exe",
+        "arguments": [
+          "--fallback-style=none",
+          "--completion-style=detailed",
+          "--header-insertion=never",
+          "--background-index",
+        ],
       },
     },
-    */
   },
 }
