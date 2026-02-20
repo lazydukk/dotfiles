@@ -8,7 +8,7 @@
     //"args": [],
     // Env overrides for the command, will be appended to the terminal's environment from the settings.
     "env": {
-      "foo": "bar"
+      "foo": "bar",
     },
     // Current working directory to spawn the command into, defaults to current project root.
     //"cwd": "/path/to/working/directory",
@@ -64,7 +64,7 @@
   },
   {
     "label": "comp.multiple.run",
-    "command": "cd $ZED_DIRNAME && g++ -O2 -DNDEBUG -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror -std=c++23 *.cpp -o ./$ZED_STEM.exe && ./$ZED_STEM.exe",
+    "command": "cd $ZED_DIRNAME && g++ -O2 -DNDEBUG -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror -std=c++23 *.cpp -o ./$ZED_STEM.exe -I ./include/ && ./$ZED_STEM.exe",
     "use_new_terminal": false,
     "allow_concurrent_runs": false,
     "reveal": "always",
@@ -73,7 +73,7 @@
   },
   {
     "label": "competitive.run",
-    "command": "cd $ZED_DIRNAME && g++ -std=c++11 -O2 -Wall -o ./builds_compet/$ZED_STEM.exe ./$ZED_STEM.cpp && ./builds_compet/$ZED_STEM.exe",
+    "command": "cd $ZED_DIRNAME && g++ -std=c++11 -O2 -Wall -o ./$ZED_STEM.exe ./$ZED_STEM.cpp -I ./include/ && ./$ZED_STEM.exe",
     "use_new_terminal": false,
     "allow_concurrent_runs": false,
     "reveal": "always",
