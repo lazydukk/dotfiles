@@ -82,7 +82,7 @@
   },
   {
     "label": "debug.run",
-    "command": "cd $ZED_DIRNAME && g++ -ggdb -o ./debug/$ZED_STEM.exe ./$ZED_STEM.cpp && ./debug/$ZED_STEM.exe",
+    "command": "cd $ZED_DIRNAME && g++ -ggdb -g -O0 -o ./debug_$ZED_STEM.exe ./$ZED_STEM.cpp -I ./include/ && ./debug_$ZED_STEM.exe",
     "use_new_terminal": false,
     "allow_concurrent_runs": false,
     "reveal": "always",
