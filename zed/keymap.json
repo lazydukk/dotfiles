@@ -10,13 +10,13 @@
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
-    }
+    },
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
       // "j k": "vim::NormalBefore"
-    }
+    },
   },
   {
     "context": "Workspace",
@@ -24,10 +24,10 @@
       "alt-f1": [
         "task::Spawn",
         {
-          "task_name": "comp.run"
-        }
-      ]
-    }
+          "task_name": "comp.run",
+        },
+      ],
+    },
   },
   {
     "context": "Workspace",
@@ -35,10 +35,10 @@
       "alt-f2": [
         "task::Spawn",
         {
-          "task_name": "comp.multiple.run"
-        }
-      ]
-    }
+          "task_name": "comp.multiple.run",
+        },
+      ],
+    },
   },
   {
     "context": "Workspace",
@@ -46,10 +46,10 @@
       "alt-f3": [
         "task::Spawn",
         {
-          "task_name": "competitive.run"
-        }
-      ]
-    }
+          "task_name": "competitive.run",
+        },
+      ],
+    },
   },
   {
     "context": "Workspace",
@@ -57,39 +57,44 @@
       "alt-f4": [
         "task::Spawn",
         {
-          "task_name": "debug.run"
-        }
-      ]
-    }
+          "task_name": "debug.multiple.run",
+        },
+      ],
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "shift-f1": "command_palette::Toggle"
-    }
+      "alt-f5": [
+        "task::Spawn",
+        {
+          "task_name": "debug.single.run",
+        },
+      ],
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-`": "terminal_panel::Toggle"
-    }
+      "shift-f1": "command_palette::Toggle",
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-j": "terminal_panel::Toggle"
-    }
+      "ctrl-`": "terminal_panel::Toggle",
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-`": null
-    }
+      "ctrl-j": "terminal_panel::Toggle",
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "alt-j": "workspace::ToggleBottomDock"
-    }
-  }
+      "alt-j": "workspace::ToggleBottomDock",
+    },
+  },
 ]
