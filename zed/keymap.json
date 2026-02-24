@@ -76,6 +76,17 @@
   {
     "context": "Workspace",
     "bindings": {
+      "alt-f6": [
+        "task::Spawn",
+        {
+          "task_name": "debug.single.make.run",
+        },
+      ],
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
       "shift-f1": "command_palette::Toggle",
     },
   },

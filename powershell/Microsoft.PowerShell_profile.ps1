@@ -1,24 +1,29 @@
 # hello, testing testing
 oh-my-posh init pwsh --config 'C:\Users\bdas\omp-themes\gruvbox.omp.json' | Invoke-Expression
 
+# launch GDB with -q flag
+function g {
+    gdb -q $args
+}
+
 # custom git functions
 # Status and Branching
-function gs
-{ git status $args
+function gs{
+    git status $args
 }
-function gb
-{ git branch $args
+function gb{
+    git branch $args
 }
-function gco
-{ git checkout $args
+function gco{
+    git checkout $args
 }
 
 # Commits and Staging
-function ga
-{ git add --all
+function ga{
+    git add --all
 }
-function gc
-{ git commit -m $args
+function gc{
+    git commit -m $args
 }
 function gca
 { git add --all; git commit -m $args
