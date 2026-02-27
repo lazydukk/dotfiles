@@ -1,0 +1,54 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "youtube",
+	"behavior": "create",
+	"noteContentFormat": "{{description}}\n![]({{url}})\n[Watch on YouTube]({{url}})",
+	"properties": [
+		{
+			"name": "title",
+			"value": "{{title}}",
+			"type": "text"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "author",
+			"value": "{{author|split:\\\", \\\"|wikilink|join}}",
+			"type": "multitext"
+		},
+		{
+			"name": "published",
+			"value": "{{published}}",
+			"type": "date"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "description",
+			"value": "{{description}}",
+			"type": "text"
+		},
+		{
+			"name": "tags",
+			"value": "clippings",
+			"type": "multitext"
+		},
+		{
+			"name": "cover",
+			"value": "https://img.youtube.com/vi/{{ url | replace:\\\"https://www.youtube.com/watch?v=\\\",\\\"\\\"  | replace:\\\"https://youtu.be/\\\",\\\"\\\" | split:\\\"&\\\" | first }}/hqdefault.jpg",
+			"type": "text"
+		}
+	],
+	"triggers": [
+		"https://www.youtube.com/watch",
+		"https://youtu.be/"
+	],
+	"noteNameFormat": "{{title}}",
+	"path": "Clippings"
+}

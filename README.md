@@ -20,3 +20,9 @@ this creates dir junction
 
 - PowerShell V7    
   - omp-themes
+
+
+---
+
+#### Anki backups
+- Go to `C:\Users\bdas\AppData\Roaming\Anki2` and paste the backed up `Anki2` folder there

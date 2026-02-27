@@ -56,7 +56,7 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "One Dark Pro Monokai Darker",
+    "dark": "Catppuccin Mocha (Blur) [Heavy]",
   },
 
   "terminal": {
