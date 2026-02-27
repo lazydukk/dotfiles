@@ -25,4 +25,4 @@ this creates dir junction
 ---
 
 #### Anki backups
-- Go to `C:\Users\bdas\AppData\Roaming\Anki2` and paste the backed up `Anki2` folder there
+- Go to `C:\Users\bdas\AppData\Roaming\Anki2` and paste the backed up `Anki2` folder theredate
