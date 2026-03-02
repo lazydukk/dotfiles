@@ -48,7 +48,7 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: "60px"
+    top: "40px"
     right: "0px"
     bottom: "0px"
     left: "0px"
@@ -60,7 +60,7 @@ window_effects:
     # ** Exclusive to Windows 11 due to API limitations.
     border:
       enabled: true
-      color: "#8dbcff"
+      color: "#b4befe"
 
     # Remove the title bar from the window's frame. Note that this can
     # cause rendering issues for some applications.
@@ -70,9 +70,9 @@ window_effects:
     # Change the corner style of the window's frame.
     # ** Exclusive to Windows 11 due to API limitations.
     corner_style:
-      enabled: false
+      enabled: true
       # Allowed values: 'square', 'rounded', 'small_rounded'.
-      style: "square"
+      style: "small_rounded"
 
     # Change the transparency of the window.
     transparency:
@@ -84,7 +84,7 @@ window_effects:
   # Visual effects to apply to non-focused windows.
   other_windows:
     border:
-      enabled: true
+      enabled: false
       color: "#a1a1a1"
     hide_title_bar:
       enabled: false
@@ -98,7 +98,7 @@ window_effects:
 window_behavior:
   # New windows are created in this state whenever possible.
   # Allowed values: 'tiling', 'floating'.
-  initial_state: "tiling"
+  initial_state: "floating"
 
   # Sets the default options for when a new window is created. This also
   # changes the defaults for when the state change commands, like
@@ -109,7 +109,7 @@ window_behavior:
       centered: true
 
       # Whether to show floating windows as always on top.
-      shown_on_top: false
+      shown_on_top: true
 
     fullscreen:
       # Maximize the window if possible. If the window doesn't have a
@@ -215,7 +215,7 @@ keybindings:
   # Change tiling direction. This determines where new tiling windows will
   # be inserted.
   - commands: ["toggle-tiling-direction"]
-    bindings: ["alt+v"]
+    bindings: ["alt+shift+v"]
 
   # Change focus from tiling windows -> floating -> fullscreen.
   - commands: ["wm-cycle-focus"]
@@ -256,7 +256,7 @@ keybindings:
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
-  - commands: ["shell-exec cmd"]
+  - commands: ["shell-exec pwsh"]
     bindings: ["alt+enter"]
 
   # Focus the next/previous active workspace defined in `workspaces` config.
