@@ -1,5 +1,5 @@
 [nvim.files]
-"nvim" = "~/AppData/Local/nvim"
+"nvim" = { target = "~/AppData/Local/nvim/", type = "symbolic"}
 
 [zed.files]
 "zed" = "~/AppData/Roaming/Zed"
@@ -10,6 +10,9 @@
 [powershell.files]
 "powershell/Microsoft.PowerShell_profile.ps1" = "~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1"
 "powershell/powershell.config.json" = "~/Documents/PowerShell/powershell.config.json"
+
+[glazeWM.files]
+"glazewm" = { target = "~/.glzr/glazewm/", type = "symbolic"}
 
 [winterm.files]
 "winterm" = { target = "~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/", type = "symbolic" }
