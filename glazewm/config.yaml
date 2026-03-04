@@ -48,7 +48,7 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: "40px"
+    top: "0px" # current: set to 0px <= error with tokyo-night zebar // otherwise set to => 30 px or as desired
     right: "0px"
     bottom: "0px"
     left: "0px"
@@ -59,7 +59,7 @@ window_effects:
     # Highlight the window with a colored border.
     # ** Exclusive to Windows 11 due to API limitations.
     border:
-      enabled: true
+      enabled: false
       color: "#b4befe"
 
     # Remove the title bar from the window's frame. Note that this can
@@ -98,7 +98,7 @@ window_effects:
 window_behavior:
   # New windows are created in this state whenever possible.
   # Allowed values: 'tiling', 'floating'.
-  initial_state: "floating"
+  initial_state: "tiling"
 
   # Sets the default options for when a new window is created. This also
   # changes the defaults for when the state change commands, like
