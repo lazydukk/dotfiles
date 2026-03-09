@@ -7,6 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "vim": {
+    "cursor_shape": {
+      "visual": "block"
+    }
+  },
+  "vim_mode": true,
   "git_panel": {
     "dock": "right",
     "tree_view": false,
@@ -28,6 +34,9 @@
       "format_on_save": "on",
     },
   },
+  
+"relative_line_numbers": "enabled",  
+
   "diagnostics": {
     "include_warnings": true,
   },
