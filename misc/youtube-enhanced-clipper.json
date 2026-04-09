@@ -1,0 +1,64 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "youtube-enhanced",
+	"behavior": "create",
+	"noteContentFormat": "![]({{url}})\n\n> [!info]- Description\n> {{description|split:\"\\n\"|join:\"\\n> \"}}\n\n> [!abstract]- Transcript (Youtube)\n> {{transcript|split:\"\\n\"|join:\"\\n> \"}}",
+	"properties": [
+		{
+			"name": "title",
+			"value": "{{title}}",
+			"type": "text"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "author",
+			"value": "{{author|split:\\\", \\\"|wikilink|join}}",
+			"type": "multitext"
+		},
+		{
+			"name": "published",
+			"value": "{{published}}",
+			"type": "date"
+		},
+		{
+			"name": "description",
+			"value": "{{description}}",
+			"type": "text"
+		},
+		{
+			"name": "cover",
+			"value": "https://img.youtube.com/vi/{{url|replace:\\\"https://www.youtube.com/watch?v=\\\":\\\"\\\"|replace:\\\"https://youtu.be/\\\":\\\"\\\"|split:\\\"&\\\"|first }}/hqdefault.jpg",
+			"type": "text"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "datetime"
+		},
+		{
+			"name": "lastedited",
+			"value": "",
+			"type": "datetime"
+		},
+		{
+			"name": "tags",
+			"value": "",
+			"type": "multitext"
+		},
+		{
+			"name": "aliases",
+			"value": "",
+			"type": "text"
+		}
+	],
+	"triggers": [
+		"https://www.youtube.com/watch",
+		"https://youtu.be/"
+	],
+	"noteNameFormat": "{{title}}",
+	"path": "Clippings"
+}
