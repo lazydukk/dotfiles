@@ -1,9 +1,18 @@
 # hello, testing testing
-oh-my-posh init pwsh --config 'C:\Users\bdas\omp-themes\gruvbox.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config 'C:\Users\bbb\omp-themes\gruvbox.omp.json' | Invoke-Expression
 
 # launch GDB with -q flag
 function g {
     gdb -q $args
+}
+# python virtual environment shortcute
+function pact {
+    .\env\Scripts\Activate.ps1
+}
+
+# christitus winutil pwsh script
+function winutil {
+    irm "https://christitus.com/win" | iex
 }
 
 # custom git functions

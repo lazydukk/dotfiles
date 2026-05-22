@@ -1,0 +1,22 @@
+
+# Predetermined workspaces for most used applications
+      # Moves the Zen browser to the workspace 2
+      - commands: ["move --workspace 2"]
+        match:
+          - window_process: { regex: "zen" }
+      # Moves the Brave browser to the workspace 2
+      - commands: ["move --workspace 4"]
+        match:
+          - window_process: { regex: "brave|zed" }
+      # Moves Obsidian to the workspace 3
+      - commands: ["move --workspace 3"]
+        match:
+          - window_process: { regex: "obsidian" }
+      # Moves Zyzzyva to the workspace 9
+      - commands: ["move --workspace 9"]
+        match:
+          - window_process: { regex: "zyzzyva|docker" }
+      # Moves Spotify to the workspace 1
+      - commands: ["move --workspace 1"]
+        match:
+          - window_process: { regex: "spotify" }

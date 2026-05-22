@@ -70,9 +70,9 @@ window_effects:
     # Change the corner style of the window's frame.
     # ** Exclusive to Windows 11 due to API limitations.
     corner_style:
-      enabled: false
+      enabled: true
       # Allowed values: 'square', 'rounded', 'small_rounded'.
-      style: "small_rounded"
+      style: "square"
 
     # Change the transparency of the window.
     transparency:
@@ -135,6 +135,12 @@ window_rules:
     match:
       # Ignores any Zebar windows.
       - window_process: { equals: "zebar" }
+
+      # Predetermined workspaces for most used applications
+      # Moves the Zen browser to the workspace 2
+      #- commands: ["move --workspace 2"]
+      #  match:
+      #    - window_process: { regex: "zen" }
 
       # Ignores picture-in-picture windows for browsers.
       - window_title: { regex: "[Pp]icture.in.[Pp]icture" }

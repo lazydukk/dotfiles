@@ -109,4 +109,13 @@
     "hide": "never",
     "shell": "system",
   },
+  {
+    "label": "py.run",
+    "command": "cd $ZED_DIRNAME && py ./$ZED_STEM.py",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never",
+    "shell": "system",
+  },
 ]
