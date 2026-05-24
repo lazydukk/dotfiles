@@ -17,5 +17,8 @@
 [winterm.files]
 "winterm" = { target = "~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/", type = "symbolic" }
 
+[sioyek.files]
+"sioyek" = {target = "~/AppData/Local/Microsoft/WinGet/Packages/ahrm.sioyek_Microsoft.Winget.Source_8wekyb3d8bbwe/sioyek-release-windows", type = "symbolic"}
+
 # [OMP.files]
 # "omp-themes" = { target = "~/omp-themes", type = "symbolic" }
