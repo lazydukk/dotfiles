@@ -93,7 +93,7 @@
 /*media widget styles*/
 .media-widget {
     margin: 0;
-    padding: 4px 8px; /* compact capsule padding to match workspaces */
+    padding: 6px 8px; /* compact capsule padding to match workspaces */
     background-color: var(--surface1);
     border-radius: 13px;
     display: inline-flex;
@@ -102,6 +102,44 @@
     min-height: 21px;
 }
 
+/* Thumbnail / cover art */
+.media-widget .thumbnail {
+    position: relative;
+    width: 36px; /* default thumbnail size */
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 13px; /* rounded corners like glazewm */
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: var(--surface2);
+}
+
+.media-widget .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Progress overlay that covers entire cover art */
+.media-widget .thumbnail .progress-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0%; /* widget or JS should set this inline to current progress */
+    background: rgba(116,199,236,0.18); /* subtle bluish overlay */
+    transition: width 150ms linear;
+    pointer-events: none;
+}
+
+/* Make the overlay slightly stronger when hovered */
+.media-widget .thumbnail:hover .progress-overlay {
+    background: rgba(116,199,236,0.24);
+}
+
+/* Label text next to thumbnail */
 .media-widget .label {
     color: var(--subtext0);
     padding: 0;
@@ -140,6 +178,7 @@
     background-color: var(--mauve);
 }
 
+/* Keep a thin fallback progress bar for non-thumbnail displays */
 .media-widget .progress-bar {
     max-height: 2px;
     background-color: var(--flamingo);
