@@ -66,7 +66,7 @@
       "milliseconds": 500,
     },
   },
-  "buffer_font_family": "ZedMono Nerd Font",
+  "buffer_font_family": "Maple Mono NF",
   "icon_theme": "Material Icon Theme",
   "telemetry": {
     "diagnostics": false,

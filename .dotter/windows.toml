@@ -14,6 +14,9 @@
 [glazeWM.files]
 "glazewm" = { target = "~/.glzr/glazewm/", type = "symbolic"}
 
+[yasb.files]
+"yasb" = {target = "~/.config/yasb/", type = "symbolic"}
+
 [winterm.files]
 "winterm" = { target = "~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/", type = "symbolic" }
 
