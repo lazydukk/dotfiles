@@ -59,57 +59,45 @@ widgets:
   media:
     type: "yasb.media.MediaWidget"
     options:
-      label: "{title}{s}{artist}"
-      label_alt: "{title}"
-      separator: " - "
+      label: "{title} {s} {artist}"
+      label_alt: "\uf001  {artist} {s} {title}  \uee83"
+      separator: "-"
       hide_empty: true
-      callbacks:
-        on_left: "toggle_label"
-        on_middle: "do_nothing"
-        on_right: "do_nothing"
-      max_field_size:
-        label: 20
-        label_alt: 30
+      controls_hide: true
       show_thumbnail: true
-      controls_only: false
-      controls_left: true
-      controls_hide: false
-      thumbnail_alpha: 80
-      thumbnail_padding: 8
-      thumbnail_corner_radius: 20
-      icons:
-        prev_track: "\ue892"
-        next_track: "\ue893"
-        play: "\ue768"
-        pause: "\ue769"
+      thumbnail_alpha: 100
+      thumbnail_padding: 0
+      max_field_size:
+        label: 48
+        label_alt: 48
+      scrolling_label:
+        enabled: true
+        update_interval_ms: 60
+        style: "left"
+        separator: " - "
+        always_scroll: false
       media_menu:
         blur: true
         round_corners: true
-        round_corners_type: "symmetric"
-        border_color: "system"
-        alignment: "right"
+        alignment: "center"
         direction: "down"
-        offset_top: 6
-        offset_left: 0
         thumbnail_corner_radius: 13
-        thumbnail_size: 200
-        max_title_size: 60
-        max_artist_size: 20
+        thumbnail_size: 250
+        max_title_size: 100
+        max_artist_size: 100
         show_source: true
       media_menu_icons:
-        play: "\ue768"
-        pause: "\ue769"
-      scrolling_label:
+        play: "\uf04b"
+        pause: "\uf04c"
+        prev_track: "\uf048"
+        next_track: "\uf051"
+      progress_bar:
         enabled: true
-        update_interval_ms: 33
-        style: "left" # can be "left", "right", "bounce", "bounce-ease"
-        separator: " | "
-        label_padding: 0
-        always_scroll: false
-        # Easing curve params: https://www.desmos.com/calculator/j7eamemxzi
-        ease_slope: 20
-        ease_pos: 0.8
-        ease_min: 0.5
+        alignment: center
+      callbacks:
+        on_left: "toggle_media_menu"
+        on_middle: "do_nothing"
+        on_right: "toggle_label"
 
   clock:
     type: yasb.clock.ClockWidget

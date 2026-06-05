@@ -19,6 +19,7 @@
     --sapphire: rgb(116, 199, 236);
     --blue: rgb(137, 180, 250);
     --lavender: rgb(180, 190, 254);
+    --lavender-transparent: #b5bfff99;
     --text: rgb(205, 214, 244);
     --subtext1: rgb(186, 194, 222);
     --subtext0: rgb(166, 173, 200);
@@ -37,6 +38,8 @@
     --cat-text: #cdd6f4;
     --cat-ubtext-1: #bac2de;
     --fg-dark: #565f89;
+    --ctp-mocha-overlay: rgba(127, 132, 156, 0.25);
+    --ctp-mocha-surface: rgba(69, 71, 90, 0.25);
     --font-main: "Maple Mono NF";
 }
 
@@ -90,111 +93,97 @@
     background-color: var(--mauve);
 }
 
-/*media widget styles*/
+/* Media Widget */
 .media-widget {
-    margin: 0;
-    padding: 6px 8px; /* compact capsule padding to match workspaces */
-    background-color: var(--surface1);
-    border-radius: 13px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    min-height: 21px;
+    max-height: 30px;
+    max-width: 167px;
+    /* Centers the widget vertically within the bar layout */
+    margin: auto 0px;
 }
 
-/* Thumbnail / cover art */
-.media-widget .thumbnail {
-    position: relative;
-    width: 36px; /* default thumbnail size */
-    height: 36px;
-    min-width: 36px;
-    min-height: 36px;
-    border-radius: 13px; /* rounded corners like glazewm */
-    overflow: hidden;
-    flex-shrink: 0;
-    background-color: var(--surface2);
-}
-
-.media-widget .thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* Progress overlay that covers entire cover art */
-.media-widget .thumbnail .progress-overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 0%; /* widget or JS should set this inline to current progress */
-    background: rgba(116,199,236,0.18); /* subtle bluish overlay */
-    transition: width 150ms linear;
-    pointer-events: none;
-}
-
-/* Make the overlay slightly stronger when hovered */
-.media-widget .thumbnail:hover .progress-overlay {
-    background: rgba(116,199,236,0.24);
-}
-
-/* Label text next to thumbnail */
 .media-widget .label {
-    color: var(--subtext0);
-    padding: 0;
-    font-size: 14px;
-    font-weight: 800; /* match glazewm weight */
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* Hide most control buttons by default */
-.media-widget .btn {
-    display: none;
-}
-
-/* Keep and style the play/pause button to match the capsule aesthetic */
-.media-widget .btn.play {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--blue);
-    padding: 0 6px;
-    margin-left: 4px;
-    min-width: 21px;
-    min-height: 21px;
-    border-radius: 13px;
-    font-family: "Segoe Fluent Icons";
-    font-size: 14px;
+    padding: 0px 10px;
+    line-height: 21px;
+    color: var(--cat-text);
     font-weight: 800;
-    cursor: pointer;
+}
+
+.media-widget .progress-bar {
+    max-height: 30px;
+    border: none;
+    border-radius: 13px;
     background-color: transparent;
 }
 
-.media-widget .btn.play:hover {
-    color: var(--lavender);
-    background-color: var(--mauve);
-}
-
-/* Keep a thin fallback progress bar for non-thumbnail displays */
-.media-widget .progress-bar {
-    max-height: 2px;
-    background-color: var(--flamingo);
-    margin-left: 6px;
-    border: none;
-    border-radius: 2px;
-}
-
 .media-widget .progress-bar::chunk {
-    background-color: var(--blue);
-    border-radius: 2px;
+    border-radius: 13px;
+    background-color: var(--lavender-transparent);
 }
 
-/* hover for entire widget to match other widgets */
-.media-widget:hover {
-    background-color: var(--yasb-white-alpha-08);
+.media-menu {
+    max-width: 720px;
+    background-color: var(--crust);
+}
+.media-menu .title,
+.media-menu .artist,
+.media-menu .playback-time {
+    font-family: var(--font-main);
+}
+.media-menu .title,
+.media-menu .artist {
+    padding-left: 12px;
+    font-size: 16px;
+}
+.media-menu .artist {
+    padding: 12px;
+}
+.media-menu .artist {
+    color: var(--lavender);
+}
+.media-menu .btn {
+    min-width: 64px;
+    max-width: 64px;
+    min-height: 48px;
+    max-height: 48px;
+    margin-left: 16px;
+    border: 1px solid var(--ctp-mocha-overlay);
+    border-radius: 4px;
+    background-color: var(--base);
+    color: var(--cat-text);
+    font-size: 20px;
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+.media-menu .btn:hover {
+    background-color: var(--ctp-mocha-surface);
+    color: var(--lavender);
+}
+.media-menu .btn.disabled:hover,
+.media-menu .btn.disabled {
+    background-color: transparent;
+    color: var(--ctp-mocha-overlay);
+}
+.media-menu .playback-time {
+    margin: 12px 0 6px;
+}
+.media-menu .progress-slider::groove {
+    height: 4px;
+    background-color: var(--ctp-mocha-overlay);
+}
+.media-menu .progress-slider::groove:hover {
+    height: 6px;
+}
+.media-menu .progress-slider::sub-page {
+    background-color: var(--lavender);
+}
+.media-menu .source {
+    margin-left: 12px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: var(--ctp-mocha-surface);
+    color: var(--lavender);
+    font-family: var(--font-main);
 }
 
 /* Tooltip */
