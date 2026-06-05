@@ -92,42 +92,52 @@
 
 /*media widget styles*/
 .media-widget {
-    margin: 0 4px;
-    padding: 4px 12px;
-    background-color: var(
-        --surface1
-    ); /* Matches the capsule container style in image_b69dec.png */
+    margin: 0;
+    padding: 4px 8px; /* compact capsule padding to match workspaces */
+    background-color: var(--surface1);
     border-radius: 13px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 21px;
 }
 
 .media-widget .label {
-    color: var(--cat-text);
+    color: var(--subtext0);
     padding: 0;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 800; /* match glazewm weight */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* Hide all control buttons by default */
+/* Hide most control buttons by default */
 .media-widget .btn {
     display: none;
 }
 
-/* Explicitly keep and style the play/pause button */
+/* Keep and style the play/pause button to match the capsule aesthetic */
 .media-widget .btn.play {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: var(--blue);
-    padding: 0 4px;
-    margin-left: 6px;
+    padding: 0 6px;
+    margin-left: 4px;
+    min-width: 21px;
+    min-height: 21px;
+    border-radius: 13px;
     font-family: "Segoe Fluent Icons";
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 800;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .media-widget .btn.play:hover {
     color: var(--lavender);
+    background-color: var(--mauve);
 }
 
 .media-widget .progress-bar {
@@ -135,11 +145,17 @@
     background-color: var(--flamingo);
     margin-left: 6px;
     border: none;
+    border-radius: 2px;
 }
 
 .media-widget .progress-bar::chunk {
     background-color: var(--blue);
     border-radius: 2px;
+}
+
+/* hover for entire widget to match other widgets */
+.media-widget:hover {
+    background-color: var(--yasb-white-alpha-08);
 }
 
 /* Tooltip */
