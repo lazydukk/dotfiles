@@ -58,6 +58,8 @@
     background-color: transparent;
 }
 
+/* glazewm styles*/
+
 /* Inactive workspaces (Circular shape) */
 .glazewm-workspaces .ws-btn {
     font-size: 14px;
@@ -86,6 +88,58 @@
 .glazewm-workspaces .ws-btn.empty:hover {
     color: var(--crust);
     background-color: var(--mauve);
+}
+
+/*media widget styles*/
+.media-widget {
+    margin: 0 4px;
+    padding: 4px 12px;
+    background-color: var(
+        --surface1
+    ); /* Matches the capsule container style in image_b69dec.png */
+    border-radius: 13px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.media-widget .label {
+    color: var(--cat-text);
+    padding: 0;
+    font-size: 12px;
+}
+
+/* Hide all control buttons by default */
+.media-widget .btn {
+    display: none;
+}
+
+/* Explicitly keep and style the play/pause button */
+.media-widget .btn.play {
+    display: inline-block;
+    color: var(--blue);
+    padding: 0 4px;
+    margin-left: 6px;
+    font-family: "Segoe Fluent Icons";
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.media-widget .btn.play:hover {
+    color: var(--lavender);
+}
+
+.media-widget .progress-bar {
+    max-height: 2px;
+    background-color: var(--flamingo);
+    margin-left: 6px;
+    border: none;
+}
+
+.media-widget .progress-bar::chunk {
+    background-color: var(--blue);
+    border-radius: 2px;
 }
 
 /* Tooltip */
