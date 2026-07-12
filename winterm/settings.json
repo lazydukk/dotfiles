@@ -1,13 +1,15 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
+    "actions": 
+    [
         {
-            "command": {
+            "command": 
+            {
                 "action": "sendInput",
                 "input": "\u001b\r"
             },
-            "keys": "shift+enter"
+            "id": "User.sendInput.8F63D3A9"
         }
     ],
     "copyFormatting": "none",
@@ -17,6 +19,14 @@
     "initialRows": 50,
     "keybindings": 
     [
+        {
+            "id": "User.sendInput.8F63D3A9",
+            "keys": "shift+enter"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        },
         {
             "id": "Terminal.CopyToClipboard",
             "keys": "ctrl+c"
@@ -28,10 +38,6 @@
         {
             "id": "Terminal.PasteFromClipboard",
             "keys": "ctrl+v"
-        },
-        {
-            "id": "Terminal.DuplicatePaneAuto",
-            "keys": "alt+shift+d"
         }
     ],
     "newTabMenu": 
@@ -105,6 +111,12 @@
                 "guid": "{3aff5782-d507-595e-b97e-aa83788e2353}",
                 "hidden": false,
                 "name": "kali-linux",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{61e363f0-6f73-5546-8338-25a232c34727}",
+                "hidden": false,
+                "name": "Ubuntu",
                 "source": "Microsoft.WSL"
             }
         ]

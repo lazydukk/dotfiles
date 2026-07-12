@@ -5,7 +5,7 @@ oh-my-posh init pwsh --config 'C:\Users\bbb\omp-themes\gruvbox.omp.json' | Invok
 function g {
     gdb -q $args
 }
-# python virtual environment shortcute
+# python virtual environment shortcut
 function pact {
     .\env\Scripts\Activate.ps1
 }

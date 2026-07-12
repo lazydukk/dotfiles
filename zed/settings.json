@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "buffer_font_weight": 400.0,
   "cli_default_open_behavior": "existing_window",
   "outline_panel": {
     "dock": "left"
@@ -72,8 +73,8 @@
     "diagnostics": false,
     "metrics": false,
   },
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "ui_font_size": 16.0,
+  "buffer_font_size": 13.0,
   "theme": {
     "mode": "dark",
     "light": "Catppuccin Latte (Blur) [Heavy]",
