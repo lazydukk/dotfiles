@@ -1,0 +1,6 @@
+includes = [".dotter/linux.toml"]
+packages = ["niri", "zed", "kitty", "dms", "zsh", "sioyek"]
+
+[files]
+
+[variables]
