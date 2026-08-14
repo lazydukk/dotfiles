@@ -1,0 +1,137 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  /*
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  */
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j j": "vim::NormalBefore",
+      "j k": "vim::NormalBefore",
+    },
+  },
+
+  {
+    "context": "Editor && !menu",
+    "bindings": {
+      "ctrl-f": "buffer_search::Deploy", // vim default: page down
+      "ctrl-c": "editor::Copy", // vim default: return to normal mode
+      "ctrl-x": "editor::Cut", // vim default: decrement
+      "ctrl-v": "editor::Paste", // vim default: visual block mode
+      "ctrl-a": "editor::SelectAll", // vim default: increment
+      "ctrl-y": "editor::Undo", // vim default: line up
+      "ctrl-t": "project_symbols::Toggle", // vim default: go to older tag
+      "ctrl-o": "workspace::Open", // vim default: go back
+      "ctrl-s": "workspace::Save", // vim default: show signature
+      "ctrl-b": "workspace::ToggleLeftDock", // vim default: down
+    },
+  },
+
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-f1": [
+        "task::Spawn",
+        {
+          "task_name": "comp.run",
+        },
+      ],
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-f2": [
+        "task::Spawn",
+        {
+          "task_name": "comp.multiple.run",
+        },
+      ],
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-f3": [
+        "task::Spawn",
+        {
+          "task_name": "competitive.run",
+        },
+      ],
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-f4": [
+        "task::Spawn",
+        {
+          "task_name": "debug.multiple.run",
+        },
+      ],
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-f5": [
+        "task::Spawn",
+        {
+          "task_name": "debug.single.run",
+        },
+      ],
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-f6": [
+        "task::Spawn",
+        {
+          "task_name": "debug.single.make.run",
+        },
+      ],
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "shift-f1": "command_palette::Toggle",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-`": "terminal_panel::Toggle",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-j": "terminal_panel::Toggle",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-j": "workspace::ToggleBottomDock",
+    },
+  },
+]

@@ -1,0 +1,129 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "buffer_font_weight": 400.0,
+  "cli_default_open_behavior": "existing_window",
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "vim": {
+    "cursor_shape": {
+      "visual": "block",
+    },
+  },
+  "vim_mode": true,
+  "git_panel": {
+    "dock": "right",
+    "tree_view": false,
+  },
+  "languages": {
+    "C++": {
+      "prettier": {
+        "allowed": false,
+      },
+      "tab_size": 2,
+      "colorize_brackets": false,
+      "inlay_hints": {
+        "show_value_hints": true,
+        "show_background": false,
+        "enabled": false,
+      },
+      "show_whitespaces": "all",
+      "use_on_type_format": true,
+      "format_on_save": "on",
+    },
+  },
+
+  "relative_line_numbers": "enabled",
+
+  "diagnostics": {
+    "include_warnings": true,
+  },
+  "debugger": {
+    "dock": "right",
+  },
+  "project_panel": {
+    "dock": "right",
+  },
+  "prettier": {
+    "allowed": true,
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 500,
+    },
+  },
+  "buffer_font_family": "Maple Mono NF",
+  "icon_theme": "Material Icon Theme",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "ui_font_size": 16.0,
+  "buffer_font_size": 13.0,
+  "theme": {
+    "mode": "dark",
+    "light": "Catppuccin Latte (Blur) [Heavy]",
+    "dark": "Catppuccin Mocha (Blur) [Light]",
+  },
+
+  "terminal": {
+    "working_directory": "current_file_directory",
+    "dock": "bottom",
+    "detect_venv": {
+      "on": {
+        // Default directories to search for virtual environments, relative
+        // to the current working directory. We recommend overriding this
+        // in your project's settings, rather than globally.
+        "directories": [".env", "env", ".venv", "venv"],
+        // Can also be `csh`, `fish`, and `nushell`
+        "activate_script": "default",
+      },
+    },
+    /*
+    "shell": {
+      "with_arguments": {
+        "program": "cmd.exe",
+        "args": [
+          "/c",
+          "C:\\msys64\\msys2_shell.cmd",
+          "-defterm",
+          "-here",
+          "-no-start",
+          "-ucrt64",
+        ],
+      },
+    },
+  },
+  */
+  },
+  /*
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "path": "C:\\msys64\\ucrt64\\bin\\clangd.exe",
+        "arguments": [
+          "--fallback-style=none",
+          "--completion-style=detailed",
+          "--header-insertion=never",
+          "--background-index",
+        ],
+      },
+    },
+  },
+  */
+}

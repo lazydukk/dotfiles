@@ -2,7 +2,7 @@
 "niri" = "~/.config/niri/"
 
 [zed.files]
-"zed" = "~/.config/zed/"
+"zed.linux" = "~/.config/zed/"
 
 [kitty.files]
 "kitty" = "~/.config/kitty"
