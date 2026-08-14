@@ -1,0 +1,13 @@
+// custom settings
+layout {
+    gaps 4
+
+    border {
+        width 0
+    }
+
+    focus-ring {
+	    off
+        width 0
+    }
+}

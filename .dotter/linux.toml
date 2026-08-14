@@ -1,0 +1,18 @@
+[niri.files]
+"niri" = "~/.config/niri/"
+
+[zed.files]
+"zed" = "~/.config/zed/"
+
+[kitty.files]
+"kitty" = "~/.config/kitty"
+
+[dms.files]
+"dms" = "~/.config/DankMaterialShell"
+
+[zsh.files]
+"zsh/.zshrc" = "~/.zshrc"
+
+# this has the flatpak installtion paths
+[sioyek.files]
+"sioyek" = "~/.var/app/com.github.ahrm.sioyek/config/.local/share/Sioyek/"
