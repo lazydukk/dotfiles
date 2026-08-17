@@ -20,24 +20,24 @@
     "keybindings": 
     [
         {
-            "id": "User.sendInput.8F63D3A9",
-            "keys": "shift+enter"
-        },
-        {
-            "id": "Terminal.DuplicatePaneAuto",
+            "id": null,
             "keys": "alt+shift+d"
         },
         {
-            "id": "Terminal.CopyToClipboard",
+            "id": null,
+            "keys": "shift+enter"
+        },
+        {
+            "id": null,
             "keys": "ctrl+c"
         },
         {
-            "id": "Terminal.FindText",
-            "keys": "ctrl+shift+f"
+            "id": null,
+            "keys": "ctrl+v"
         },
         {
-            "id": "Terminal.PasteFromClipboard",
-            "keys": "ctrl+v"
+            "id": null,
+            "keys": "ctrl+shift+f"
         }
     ],
     "newTabMenu": 
@@ -57,7 +57,7 @@
                 "size": 11,
                 "weight": "medium"
             },
-            "opacity": 60,
+            "opacity": 72,
             "useAcrylic": true
         },
         "list": 
@@ -102,21 +102,15 @@
                 "startingDirectory": "C:/msys64/home/%USERNAME%"
             },
             {
-                "guid": "{ab30cd53-d140-5211-b464-27192726bdfe}",
-                "hidden": false,
-                "name": "archlinux",
-                "source": "Microsoft.WSL"
+                "guid": "{ddad2f1c-79f7-5b21-a2c2-7560c6c23ae0}",
+                "hidden": true,
+                "name": "Ubuntu-26.04",
+                "source": "Windows.Terminal.Wsl"
             },
             {
-                "guid": "{3aff5782-d507-595e-b97e-aa83788e2353}",
+                "guid": "{4f58efd2-5026-5e2c-9b20-58a96d4612ac}",
                 "hidden": false,
-                "name": "kali-linux",
-                "source": "Microsoft.WSL"
-            },
-            {
-                "guid": "{61e363f0-6f73-5546-8338-25a232c34727}",
-                "hidden": false,
-                "name": "Ubuntu",
+                "name": "Ubuntu-26.04",
                 "source": "Microsoft.WSL"
             }
         ]
@@ -170,7 +164,7 @@
                 "experimental.rainbowFrame": false,
                 "frame": null,
                 "unfocusedFrame": null,
-                "useMica": false
+                "useMica": true
             }
         }
     ]
