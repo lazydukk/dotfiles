@@ -2,7 +2,7 @@ general:
   # Commands to run when the WM has started. This is useful for running a
   # script or launching another application.
   # Example: The below command launches Zebar.
-  startup_commands: ["shell-exec zebar"]
+  # startup_commands: ["shell-exec zebar"] # using yasb for now
 
   # Commands to run just before the WM is shutdown.
   # Example: The below command kills Zebar.
@@ -41,7 +41,7 @@ general:
 
 gaps:
   # Whether to scale the gaps with the DPI of the monitor.
-  scale_with_dpi: false # default is: true
+  scale_with_dpi: true # default is: true
 
   # Gap between adjacent windows.
   inner_gap: "0px"
@@ -59,8 +59,8 @@ window_effects:
     # Highlight the window with a colored border.
     # ** Exclusive to Windows 11 due to API limitations.
     border:
-      enabled: false
-      color: "#b4befe"
+      enabled: true
+      color: "#000000"
 
     # Remove the title bar from the window's frame. Note that this can
     # cause rendering issues for some applications.
@@ -84,12 +84,12 @@ window_effects:
   # Visual effects to apply to non-focused windows.
   other_windows:
     border:
-      enabled: false
-      color: "#a1a1a1"
+      enabled: true
+      color: "#000000"
     hide_title_bar:
       enabled: false
     corner_style:
-      enabled: false
+      enabled: true
       style: "square"
     transparency:
       enabled: false
@@ -114,7 +114,7 @@ window_behavior:
     fullscreen:
       # Maximize the window if possible. If the window doesn't have a
       # maximize button, then it'll be fullscreen'ed normally instead.
-      maximized: false
+      maximized: true
 
       # Whether to show fullscreen windows as always on top.
       shown_on_top: false
@@ -159,6 +159,8 @@ window_rules:
         window_class: { not_regex: "OpusApp" }
       - window_process: { equals: "POWERPNT" }
         window_class: { not_regex: "PPTFrameClass" }
+      - window_process: { equals: "YASB" }
+        window_class: { regex: "YASB" }
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
