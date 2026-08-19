@@ -161,6 +161,8 @@ window_rules:
         window_class: { not_regex: "PPTFrameClass" }
       - window_process: { equals: "YASB" }
         window_class: { regex: "YASB" }
+      - window_process: { equals: "PileUp" }
+        window_class: { regex: "PileUp" }
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.

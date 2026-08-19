@@ -1,4 +1,8 @@
 {
+	"dismissedBadges" : 
+	[
+		"page.extensions"
+	],
 	"dismissedMessages" : 
 	[
 		"closeOnExitInfo",
@@ -14,5 +18,5 @@
 		"{3aff5782-d507-595e-b97e-aa83788e2353}",
 		"{ddad2f1c-79f7-5b21-a2c2-7560c6c23ae0}"
 	],
-	"settingsHash" : "decaa3f214011373-01dd2e18bab7fe83"
+	"settingsHash" : "8a53e97f3804e0dd-01dd2f0f37935b1f"
 }

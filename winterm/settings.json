@@ -15,6 +15,10 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "disabledProfileSources": 
+    [
+        "Windows.Terminal.Azure"
+    ],
     "initialCols": 190,
     "initialRows": 50,
     "keybindings": 
@@ -50,6 +54,7 @@
     {
         "defaults": 
         {
+            "background": "#020203",
             "colorScheme": "Catppuccin Mocha",
             "font": 
             {
